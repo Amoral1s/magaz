@@ -1,6 +1,5 @@
 @import "reset"
-body
-  min-height: 8000px
+
 div.title
   text-transform: uppercase
   font-family: $bold
@@ -287,6 +286,318 @@ div.title
         text-align: center
         margin-top: 10px
         font-size: 16px
+
+.greeds
+  padding: 50px 0
+  div.title
+    text-align: center
+  &-wrap
+    padding: 30px 0
+    display: flex
+    &-item
+      display: flex
+      flex-direction: column
+      flex-basis: 24%
+      box-shadow: 0 0 5px rgba(#000,0.3)
+      padding: 20px
+      margin: 10px
+      img
+        width: 100%
+      h3
+        font-size: 22px
+        line-height: 26px
+        margin: 10px 0
+      p
+        font-size: 14px
+        line-height: 16px
+        margin-bottom: 10px
+      &-like
+        display: flex
+        justify-content: space-between
+        margin-bottom: 15px
+        span.greeds-cost
+          font-family: $bold
+          font-size: 24px
+          color: $light
+      &-cart
+        display: flex
+        justify-content: space-between
+        border: 1px solid $light
+        padding: 10px
+        div
+          display: flex
+          flex-basis: 70%
+          justify-content: center
+          font-family: $bold
+          cursor: pointer
+        span
+          display: flex
+          flex-basis: 15%
+          img
+            width: auto
+.greeds
+  &-wrap
+    display: flex
+    .slick-arrow
+      position: absolute
+      font-size: 0
+      height: 30px
+      width: 30px
+      border-radius: 50%
+      border: 0
+      background-color: rgba(#000, 0.5)
+      cursor: pointer
+      &:focus
+        outline: none
+    .slick-prev
+      left: -30px
+      top: 50%
+      transform: translateY(-50%)    
+      z-index: 9
+      background-image: url("../img/icons/left-arrow.svg")
+      background-repeat: no-repeat
+      background-size: 80%
+      background-position: 1px center
+    .slick-next
+      right: -30px
+      top: 50%
+      transform: translateY(-50%)    
+      z-index: 9
+      background-image: url("../img/icons/right-arrow.svg")
+      background-repeat: no-repeat
+      background-size: 80%
+      background-position: 4px center
+.heets
+  padding-top: 0
+.blog
+  div.title
+    text-align: center
+    margin-bottom: 30px
+  &-wrap
+    background: #f7f7f9
+    padding: 50px 0
+    display: flex
+    flex-direction: column
+    a.button2
+      background-color: $main
+      color: #fff
+      padding: 15px 45px
+      margin: 50px auto 0 auto
+      transition: 1s
+      &:hover
+        background-color: $light
+        transition: 1s
+
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      
+      &-item
+        display: flex
+        flex-direction: column
+        flex-basis: 31%
+        padding: 10px
+        background-color: #fff
+        box-shadow: 0 0 15px rgba(#000, 0.1)
+        p
+          margin: 10px 0
+        span
+          margin: 10px 0
+        img
+          width: 100%
+        a.button
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 80%
+          margin: 10px auto
+          border: 1px solid $light
+          padding: 10px 20px
+          color: $light
+          transition: 1s
+          &:hover
+            background-color: $light
+            color: #fff
+            transition: 1s
+.news
+  padding: 50px 0
+  div.title
+    text-align: center
+    margin-bottom: 30px
+  &-wrap
+    padding: 10px 0
+    display: flex
+    flex-direction: column
+    a.button2
+      background-color: $main
+      color: #fff
+      padding: 15px 45px
+      margin: 50px auto 0 auto
+      transition: 1s
+      &:hover
+        background-color: $light
+        transition: 1s
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      &-item
+        display: flex
+        flex-direction: column
+        flex-basis: 31%
+        padding: 10px
+        background-color: #fff
+        box-shadow: 0 0 15px rgba(#000, 0.1)
+        p
+          margin: 10px 0
+        span
+          margin: 10px 0
+        img
+          width: 100%
+        a.button
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 80%
+          margin: 10px auto
+          border: 1px solid $light
+          padding: 10px 20px
+          color: $light
+          transition: 1s
+          &:hover
+            background-color: $light
+            color: #fff
+            transition: 1s
+.chebox
+  div.title
+    text-align: center
+    margin-bottom: 50px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    &-left
+      display: flex
+      flex-basis: 48%
+      iframe
+        width: 100%
+    &-right
+      display: flex
+      flex-basis: 48%
+      flex-direction: column
+      p
+        margin-bottom: 20px
+.sponsor
+  margin-top: 60px
+  img
+    width: 100%
+    display: flex
+  .slick-arrow
+    position: absolute
+    font-size: 0
+    height: 30px
+    width: 30px
+    border-radius: 50%
+    border: 0
+    background-color: rgba(#000, 0.5)
+    cursor: pointer
+    &:focus
+      outline: none
+  .slick-prev
+    left: -30px
+    top: 50%
+    transform: translateY(-50%)    
+    z-index: 9
+    background-image: url("../img/icons/left-arrow.svg")
+    background-repeat: no-repeat
+    background-size: 80%
+    background-position: 1px center
+  .slick-next
+    right: -30px
+    top: 50%
+    transform: translateY(-50%)    
+    z-index: 9
+    background-image: url("../img/icons/right-arrow.svg")
+    background-repeat: no-repeat
+    background-size: 80%
+    background-position: 4px center      
+.footer
+  padding: 50px 0
+  margin-top: 50px
+  background-color: #eff0f0
+  &-wrap
+    display: flex
+    &-left
+      display: flex
+      flex-direction: column
+      flex-basis: 75%
+      justify-content: space-between
+      &-top
+        display: flex
+        justify-content: space-between
+        ul
+          li
+            padding: 5px 0
+            a
+              font-size: 14px
+              color: #000
+      &-bottom
+        display: flex
+        justify-content: space-between
+        img
+          display: flex
+          width: 120px
+          height: 30px
+        div
+          display: flex
+          flex-direction: column
+          margin-right: 150px
+    &-right
+      display: flex
+      flex-basis: 25%
+      flex-direction: column
+      &-bottom
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        div
+          display: flex
+          a
+            img
+              width: 40px
+              margin: 10px
+      &-top
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        a
+          margin: 5px
+          color: $main
+          font-family: $bold
+          font-size: 16px
+        button
+          margin: 20px 0
+          background-color: $light
+          border: 0
+          color: #fff
+          padding: 7px 20px
+          cursor: pointer
+        &-social
+          display: flex
+          a
+            display: flex
+            justify-content: space-between
+            img
+              width: 40px
+
+
+
+
+
+
+
+
+
+
+
 
 @import "media1200"
 @import "media992"

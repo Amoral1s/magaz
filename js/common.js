@@ -27,6 +27,26 @@ $(document).ready(function () {
       autoplayspeed: 5000,
       speed: 500
   });
+  jQuery('.greeds-wrap').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      autoplayspeed: 5000,
+      speed: 500
+  });
+  jQuery('.sponsor').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    infinite: true,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      autoplayspeed: 5000,
+      speed: 500
+  });
 });
 
 
