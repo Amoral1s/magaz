@@ -32,7 +32,50 @@ div.title
             &:hover
               background-color: $main
               transition: 1s
-
+        li.has-children
+          position: relative
+          a
+            padding-right: 20px
+            position: relative
+            &:hover
+              &:after
+                background-image: url(../img/icons/drop-down-arrow.svg)
+            &:after
+              position: absolute
+              content: ''
+              background-image: url(../img/icons/drop-down-arrow-white.svg)
+              background-repeat: no-repeat
+              background-size: cover
+              height: 7px 
+              width: 10px
+              top: 50%
+              transform: translateY(-50%)
+              right: 5px
+          ul
+            position: absolute
+            left: 0
+            top: 48px
+            display: none
+            background-color: #fff
+            border-radius: 0 0 5px 5px
+            box-shadow: 0 2px 5px rgba(#000, 0.3)
+            z-index: 9
+            li
+              display: flex
+              width: 100%
+              a
+                display: flex
+                width: 100%
+                color: #000
+                padding: 10px
+                text-transform: none
+                min-width: 120px
+                font-size: 12px
+                &:after
+                  display: none
+                &:hover
+                  background-color: $main
+                  color: #fff
     &-middle 
       display: flex
       align-items: center
@@ -42,10 +85,23 @@ div.title
         display: flex
         flex-basis: 33%
       &-right
-        margin-top: -110px
+        min-height: 170px
         display: flex
-        justify-content: flex-start
+        flex-direction: column
+        justify-content: space-around
+        align-items: flex-end
         flex-basis: 33%
+        div.cart
+          a
+            display: flex
+            align-items: center
+            color: #000
+            strong
+              margin-left: 4px
+            img
+              margin-right: 10px
+              width: 35px
+              height: 30px
         form
           position: relative
           input[type="submit"]
@@ -78,15 +134,19 @@ div.title
         div 
           width: 100%
           display: flex
-          justify-content: center
+          justify-content: flex-start
+          align-items: center
           padding-left: 30px
           padding-top: 20px
+          a
+            padding-left: 10px
         a
           position: relative
           padding-left: 40px
           font-size: 28px
           color: $main
           font-weight: 600
+        a.phone
           &:after
             position: absolute
             content: ''
@@ -100,6 +160,23 @@ div.title
     &-top
       background-color: $main
       nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        div.login
+          display: flex
+          align-items: center
+          justify-content: flex-end
+          a
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #fff
+            span
+              margin-left: 5px
+            img
+              margin-right: 10px
+              margin-left: 20px
         ul
           display: flex
           li

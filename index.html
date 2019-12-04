@@ -17,10 +17,15 @@
     <div class="header-nav">
       <div class="header-nav-top">
         <nav class="container">
-          <ul>
+          <div class="menu-toggle ">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="header-toggle-top">
             <li class="has-children">
               <a href="#">Kiosk</a>
-              <ul>
+              <ul >
                 <li><a href="">О компании</a></li>
                 <li><a href="">Новости</a></li>
                 <li><a href="">Контакты</a></li>
@@ -31,12 +36,18 @@
             <li><a href="#">Блог</a></li>
             <li><a href="#">Сертификаты</a></li>
           </ul>
+          <div class="login">
+            <a href=""><img src="img/icons/like-white.png" alt="">Избранные товары <span>0</span></a>
+            <a href=""><img src="img/icons/vesy-light.png" alt="">Сравнение <span>0</span></a>
+            <a href=""><img src="img/icons/delivery.png" alt="">Доставка</a>
+            <a href=""><img src="img/icons/login.png" alt="">Вход</a>
+          </div>
         </nav>
       </div>
       <div class="header-nav-middle container">
         <div class="header-nav-middle-left">
-          <a href="">+7 (926) 033-20-06</a>
-          <div>WhatsApp / Telegram / Viber</div>
+          <a class="phone" href="">+7 (926) 033-20-06</a>
+          <div>WhatsApp / Telegram / Viber <a href=""><img src="img/icons/inst-header.png" alt=""></a><a href=""><img src="img/icons/vk-header.png" alt=""></a></div>
         </div>
         <div class="header-nav-middle-center">
           <a href="">
@@ -48,6 +59,9 @@
             <input type="text" value="" placeholder="ПОИСК ПО САЙТУ" name="s" id="s" />
             <input type="submit" id="searchsubmit" value="" placeholder="img/logo.png" />
           </form>
+          <div class="cart">
+            <a href=""><img src="img/icons/cart.png" alt="">Товаров на <strong>0</strong><strong> ₽</strong></a>
+          </div>
         </div>
       </div>
       <div class="header-nav-bottom">
@@ -57,7 +71,15 @@
         <nav>
           <ul>
             <li><a href="#">Новинки</a></li>
-            <li><a href="#">Уход за лицом</a></li>
+            <li class="has-children"><a href="#">Уход за лицом</a>
+              <ul>
+                <li><a href="">Уход за телом</a></li>
+                <li><a href="">Уход за телом</a></li>
+                <li><a href="">Уход за телом</a></li>
+                <li><a href="">Уход за телом</a></li>
+                <li><a href="">Уход за телом</a></li>
+              </ul>
+            </li>
             <li><a href="#">Уход за телом </a></li>
             <li><a href="#">Уход за волосами</a></li>
             <li><a href="#">МАКИЯЖ</a></li>
