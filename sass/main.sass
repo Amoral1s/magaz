@@ -593,8 +593,61 @@ div.title
               max-width: 40px
 .call-category 
   display: none
-
-
+.page-blog
+  padding: 50px 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  div.title
+    margin-bottom: 30px
+  &-item
+    display: flex
+    flex-direction: column
+    flex-basis: 31%
+    padding: 10px
+    background-color: #fff
+    box-shadow: 0 0 15px rgba(#000, 0.1)
+    margin-bottom: 30px
+    p
+      margin: 10px 0
+    span
+      margin: 10px 0
+    img
+      width: 100%
+    a.button
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 80%
+      margin: 10px auto
+      border: 1px solid $light
+      padding: 10px 20px
+      color: $light
+      transition: 1s
+      &:hover
+        background-color: $light
+        color: #fff
+        transition: 1s
+.wp-pagenavi
+  a, span.current
+    padding: 5px 7px
+    border: 1px solid $main
+    margin: 0 2px
+    color: $main
+    min-height: 30px
+    min-width: 30px
+  span.extend
+    padding: 5px 7px
+    background-color: $light
+    border: 1px solid $main
+    margin: 0 2px
+    min-height: 30px
+    min-width: 30px
+    min-height: 30px
+    min-width: 30px
+  span.current
+    background-color: $main
+    color: #fff
 
 
 

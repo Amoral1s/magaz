@@ -1218,6 +1218,101 @@ div.title {
   display: none;
 }
 
+.page-blog {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.page-blog div.title {
+  margin-bottom: 30px;
+}
+
+.page-blog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.page-blog-item p {
+  margin: 10px 0;
+}
+
+.page-blog-item span {
+  margin: 10px 0;
+}
+
+.page-blog-item img {
+  width: 100%;
+}
+
+.page-blog-item a.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid #daa3ac;
+  padding: 10px 20px;
+  color: #daa3ac;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.page-blog-item a.button:hover {
+  background-color: #daa3ac;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.wp-pagenavi a, .wp-pagenavi span.current {
+  padding: 5px 7px;
+  border: 1px solid #508465;
+  margin: 0 2px;
+  color: #508465;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+.wp-pagenavi span.extend {
+  padding: 5px 7px;
+  background-color: #daa3ac;
+  border: 1px solid #508465;
+  margin: 0 2px;
+  min-height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+.wp-pagenavi span.current {
+  background-color: #508465;
+  color: #fff;
+}
+
 @media (max-width: 1199px) {
   .header-nav-bottom nav ul {
     -ms-flex-wrap: wrap;
@@ -1326,6 +1421,10 @@ div.title {
 }
 
 @media (max-width: 768px) {
+  .page-blog-item {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
   .call-category {
     display: block;
   }
@@ -1437,15 +1536,55 @@ div.title {
 }
 
 @media (max-width: 578px) {
+  .page-blog div.title {
+    text-align: center;
+  }
+  .pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  div.wp-pagenavi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.wp-pagenavi a {
+    padding: 3px 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.wp-pagenavi span {
+    padding: 2px 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   div.footer-wrap-right-top-social a img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-height: 40px;
     max-width: 40px;
-  }
-  .call-category {
-    display: block;
   }
   .header-nav-top nav ul li.has-children ul li a {
     min-width: 250px;
@@ -1554,8 +1693,9 @@ div.title {
 }
 
 @media (max-width: 440px) {
-  body {
-    background-color: #fff;
+  .page-blog-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
