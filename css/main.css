@@ -1209,6 +1209,7 @@ div.title {
 
 .footer-wrap-right-top-social a img {
   width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 1199px) {
