@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  $('.call-category').on('click', () => {
+    $('.header-nav-bottom nav').slideToggle(600);
+  });
   jQuery('li.has-children').mouseenter(function() {
     jQuery(this).children('ul').slideDown(500);
   });
@@ -17,6 +20,29 @@ $(document).ready(function () {
       autoplayspeed: 4000,
       speed: 500
   });
+  if($(window).width() < 578) {
+  jQuery('.sale-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: true,
+      arrows: true,
+      dots: false,
+      autoplay: false,
+      autoplayspeed: 5000,
+      speed: 500
+  });
+} else if($(window).width() < 992) {
+  jQuery('.sale-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      autoplayspeed: 5000,
+      speed: 500
+  });
+} else {
   jQuery('.sale-slider').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -27,6 +53,34 @@ $(document).ready(function () {
       autoplayspeed: 5000,
       speed: 500
   });
+}
+
+
+
+
+  if($(window).width() < 578) {
+    jQuery('.greeds-wrap').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplayspeed: 5000,
+        speed: 500
+    });
+} else if($(window).width() < 992) {
+    jQuery('.greeds-wrap').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplayspeed: 5000,
+        speed: 500
+    });
+} else {
   jQuery('.greeds-wrap').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -37,6 +91,19 @@ $(document).ready(function () {
       autoplayspeed: 5000,
       speed: 500
   });
+}
+if($(window).width() < 578) {
+  jQuery('.sponsor').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      autoplayspeed: 5000,
+      speed: 500
+  });
+} else {
   jQuery('.sponsor').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -47,6 +114,7 @@ $(document).ready(function () {
       autoplayspeed: 5000,
       speed: 500
   });
+}
 });
 
 

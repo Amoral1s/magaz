@@ -1,3 +1,77 @@
 @media (max-width: 768px)
-  body
-    background-color: #fff
+  .sale-slider
+    button.slick-prev
+      left: -20px
+    button.slick-next
+      right: -20px
+  .greeds-wrap
+    button.slick-prev
+      left: -25px
+    button.slick-next
+      right: -25px
+  .new
+    &-left
+      &-wrap
+        div.slick-track
+          a
+            padding: 0 20px
+            img
+              width: 100%
+            
+  .header
+    &-nav
+      &-bottom
+        min-height: 80px
+        background-color: $light
+        flex-direction: column
+        div.button
+          background-color: $main
+          border-radius: 13px
+          padding: 15px 60px
+          color: #fff
+          box-shadow: 0 0 15px rgba($main, 0.5)
+          margin: 20px 0
+        nav
+          display: none
+          margin-bottom: 20px
+          width: 100%
+          ul
+            flex-direction: column
+            li
+              width: 100%
+              border: 1px solid $main
+              a
+                width: 100%
+            li:first-child
+              border-top: 2px solid $main
+            li:last-child
+              border-bottom: 2px solid $main
+      &-top
+        nav
+          ul
+            justify-content: center
+      &-middle
+        flex-direction: column-reverse
+        min-height: 300px
+        justify-content: flex-start
+        &-left
+          margin-bottom: 30px
+          div
+            font-size: 14px
+          a
+            font-size: 18px
+            &:after
+              height: 25px
+              width: 26px
+              top: -4px
+              left: 10px
+        &-right
+          margin-top: 0px
+        &-center
+          a
+            display: flex
+            width: 100%
+            height: 100%
+            img
+              width: 100%
+          margin: 20px 0

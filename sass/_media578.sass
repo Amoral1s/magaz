@@ -1,3 +1,64 @@
 @media (max-width: 578px)
-  body
-    background-color: #fff
+  .header-nav-top nav ul li.has-children ul li a
+    min-width: 250px
+  .header
+    &-nav
+      &-top
+        nav
+          ul
+            li
+              a
+                font-size: 14px
+  .footer
+    &-wrap
+      flex-wrap: wrap
+      flex-direction: column-reverse
+      &-right
+        flex-basis: 100%
+        &-top
+          align-items: center
+        &-bottom
+          align-items: center
+      &-left
+        flex-basis: 100%
+        &-top
+          flex-direction: column
+          align-items: center
+        &-bottom
+          flex-direction: column
+          align-items: center
+          margin-top: 20px
+          div
+            margin: 15px 0
+  .features
+    padding-bottom: 10px
+    &-wrap
+      flex-wrap: wrap
+      &-item
+        flex-basis: 32%
+        height: 160px
+  .new
+    padding-top: 30px
+    &-right
+      padding: 20px
+  .greeds-wrap
+    button.slick-prev
+      left: 10px
+    button.slick-next
+      right: 10px
+  .sale-slider
+    button.slick-prev
+      left: 0
+    button.slick-next
+      right: 0
+    div.slick-list
+      div.slick-track
+        a
+          display: flex
+          flex-direction: column
+          align-items: center
+  .blog-wrap-wrapper-item
+    flex-basis: 100%
+  .news-wrap-wrapper-item
+    flex-basis: 100%
+  
